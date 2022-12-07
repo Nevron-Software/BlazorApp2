@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
-        repository: demos/BlazorTest
+        repository: BlazorTest
         dockerfile: '**/Dockerfile'
         containerRegistry: BlazorTestConnection
         tags: |
