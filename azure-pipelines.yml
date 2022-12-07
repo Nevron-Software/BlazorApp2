@@ -24,8 +24,8 @@ stages:
       displayName: Build and push an image to container registry
       inputs:
         command: buildAndPush
-        repository: blazorTestRepo
-        containerRegistry: BlazorApp2
+        repository: Nevron-Software/BlazorApp2
+        containerRegistry: BlazorTestConnection
         dockerfile: '**/Dockerfile'
         tags: |
           $(Build.BuildId)
