@@ -21,12 +21,9 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build and push an image to container registry
+      displayName: Build an image
       inputs:
-        command: buildAndPush
-        repository: Nevron-Software/BlazorApp2
-        containerRegistry: BlazorTestConnection
-        dockerfile: '**/Dockerfile'
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
-          $(Build.BuildId)
-          latest
+          $(tag)
