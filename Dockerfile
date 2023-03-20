@@ -8,7 +8,7 @@ WORKDIR /src
 COPY BlazorApp2.csproj .
 # run dotnet restore on the for the project in the container
 RUN dotnet restore BlazorApp2.csproj
-copy everything from the local folder to the container working folder
+# copy everything from the local folder to the container working folder
 COPY . .
 # build the app in release mode
 RUN dotnet build BlazorApp2.csproj -c Release -o /app/build
