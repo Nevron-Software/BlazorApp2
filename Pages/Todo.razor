@@ -15,7 +15,7 @@
     }
 </ul>
 
-<input placeholder="Something todo" />
+<input placeholder="Something todo" @bind-value="newTodo" />
 <button @onclick="AddTodo">Add todo</button>
 
 @code {
