@@ -1,7 +1,7 @@
 ﻿# get sdk:6.0 (the actual os) and name it build
 # Note! We don't need to get asp.net core runtime image 
 # since the app will bi hosted on linux nginx server
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 #set working directory
 WORKDIR /src
 # copy the project file into the working directory
